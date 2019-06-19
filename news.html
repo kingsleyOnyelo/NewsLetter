@@ -14,50 +14,54 @@
     
     <title>News Letter</title>
     <style>
-h2{
-    font-weight:200;
+        body{
+            background: rgb(122, 121, 120);
+        }
+h3{
+    font-weight:50;
 }
 h4{color:lightgray;}
+a{color: lightgray; text-decoration: none; font-size: 10px;}
+.socialLinks{color: blue; font-size: 3em; padding-left: 12px;}
+.socialLinks:hover{color: lightgray}
+.cancelPrice{font-size: 9px;  text-decoration: line-through; font-size: 18px; color:red}
+.newPrice{font-size: 9px; font-size: 20px; color:green; margin-left: 19px;}
+.legal{color:lightgray; padding-top: 190px; margin-left: 90px; font-size: 9px;}
+a:hover{text-decoration: none; color: rgb(0, 26, 175)}
 .wrapper{
     display: flex; flex-direction: column; background: rgb(122, 121, 120); width: 700px; height: 100%;
 }
 .logoWrap{
-    width: 600px; background: #ffffff; height: 130px; margin: 0 auto; display: flex;flex-direction: column;justify-content: center;
+    width: 600px; background: #ffffff; height: 130px; margin: 0 auto; display: flex;flex-direction: row;justify-content: space-between;
 }
 .logo{
-    width: 30%; background: transparent; margin: 0 auto; display: flex; justify-content: center;
-}
-
+    width: 50%; background: transparent; margin-top: 30px; margin-left: 15px;}
+.searchBox{width: 40%; height: 60px; margin-right: 20px; margin-top: 50px;}
+.searchMe{width: 70%; height:25px; border: 0.5px solid rgb(0, 26, 175); padding-left: 10px; border-radius: 10px; background: #ffffff; margin-left: 80px}
+.findButton{background: rgb(0, 26, 175); border: none; height: 25px; border-radius: 10px; color:#ffffff;}
 .banner{
-    width: 600px; height: 150px; background: rgb(60, 60, 60); margin: 0 auto;
-}
+    max-width: 600px; height: auto; margin: 0 auto;}
 .hostingDeals{
-    width: 600px; padding-bottom: 10px; background: #ffffff; margin: 0 auto; display: flex; flex-direction: column;justify-content: center;
-   
-}
+    width: 600px; padding-bottom: 10px; background: #ffffff; margin: 0 auto; display: flex; flex-direction: column;justify-content: center;}
 .header{
     width: 100%; text-align: center;
 }
 
 .dealsContent{
-    width: 600px; background: #ffffff; padding: 20px; height: 300px; display: flex; flex-direction: row;
+    width: 600px; background: #ffffff; padding-left: 20px; padding-right: 20px; padding-top: 0px; padding-bottom: 20px; height: 300px; display: flex; flex-direction: row;
     justify-content: space-between;
 }
 
-.content{
-    width: 30%; height: 205px; background: #000000; margin-top: 20px; border-radius: 10px;
-}
+.content{width: 30%; height: 270px; background: #ffca00; border-radius: 10px; display: flex; flex-direction: column;}
 
-.contentMiddle{
-    width: 30%; height: 240px; background: #000000; border-radius: 10px;
-}
+
+.ctaButton1{
+    display: flex; flex-direction: row; justify-content: center;}
 .ctaButton{
-    display: flex; flex-direction: row; justify-content: center;
-}
+    display: flex; flex-direction: row; justify-content: center; padding-bottom: 20px;}
 .ctaBut{
-    border-radius: 23px; background: rgb(0, 26, 175); border: none; width: 200px; height: 30px; margin:0 auto;
-    color: #ffffff;
-    font-weight: bold;
+    border-radius: 23px; background: rgb(0, 26, 175); border: none; width: 200px; height: 50px; margin:0 auto;
+    color: #ffffff; font-weight: bold; font-size: 20px;
 }
 .bannerDomainDeals{
     width: 600px; height: 100px; background: rgb(60, 60, 60); margin: 0 auto; margin-top:30px;
@@ -71,17 +75,20 @@ h4{color:lightgray;}
 
 }
 .circle{
-    width: 85%; height: 60%; background: #ffffff; margin: 0 auto; border-radius: 35%; margin-top: 10px; text-align: center;
-    color:rgb(0, 26, 175);
-    border: 1px solid rgb(0, 26, 175);
-}
+    width: 85%; height: 60%; background: #ffffff; margin: 0 auto;  margin-top: 10px; text-align: center;
+    color:rgb(0, 26, 175);}
 .footer{
-    width: 630px; height: 300px; margin: 0 auto; background: rgb(60, 60, 60); display: flex; justify-content: space-between; padding: 10px;}
-.rows1{width: 50%; height: 230px; background:rgb(60, 60, 60);}
-.rows2{width: 45%; height: 130px; background: rgb(60, 60, 60); display: flex; flex-direction: row; justify-content: space-between; padding: 20px;}
+    width: 630px; height: 300px; margin: 0 auto; background-image:url('https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/0b4814ae5a00471d06e31c0324ff8e07/footer_Asset.png'); display: flex; justify-content: space-between; padding: 10px; margin-top:-10px;}
+.rows1{width: 50%; height: 230px; background: #000000; margin-left: 25px;}
+.rows2{width: 45%; height: 130px; background: #000000; display: flex; flex-direction: column; justify-content: space-between;padding-top:30px;}
 .listWrap{display: flex; flex-direction: row}
 .listRow{width: 100%; color:lightgray; list-style: none;}
 .listRow2{width: 100%; color:lightgray; list-style: none}
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     .wrapper{
     display: flex; flex-direction: column; background:rgb(122, 121, 120); width: 100%; height: 100%;}
@@ -89,27 +96,59 @@ h4{color:lightgray;}
     width:100%; background: #ffffff; height: 130px; margin: 0 auto; display: flex;flex-direction: column;justify-content: center;}
 .logo{
     width: 70%; background: transparent; margin: 0 auto; display: flex; justify-content: center;}
-.banner{
-    width: 100%; height: 150px; background: rgb(60, 60, 60); margin: 0 auto;}
+.searchBox{width: 70%; height: 27px; margin: 0 auto; margin-top: 20px;}
+.searchMe{width: 60%; height:25px; border: 0.5px solid rgb(0, 26, 175); border-radius: 10px; background: #ffffff; margin-left: 20px;}
+.findButton{background: rgb(0, 26, 175); border: none; height: 25px; border-radius: 10px; color:#ffffff}
 .hostingDeals{
     width: 100%; padding-bottom: 10px; background: #ffffff; margin: 0 auto; display: flex; flex-direction: column;justify-content: center;}
 .dealsContent{
-    width: 100%; background:#ffffff; display: flex; flex-direction: column; height:700px;}
-.content{
-    width: 60%; height: 400px; background: #000000;  border-radius: 10px; margin:0 auto; margin-top: 10px;}
-.contentMiddle{
-    width: 60%; height: 400px; background: #000000; border-radius: 10px;  margin:0 auto; margin-top: 10px;}
+    width: 100%; background:#ffffff; display: flex; flex-direction: column; height:900px;}
+.content{width: 60%; height: 400px; background: #ffca00;  border-radius: 10px; margin:0 auto; margin-top: 10px;}
+
 .bannerDomainDeals{
     width:100%; height: 100px; background: rgb(60, 60, 60); margin: 0 auto; margin-top:30px;}
 .domainNames{
-    width:100%; height: 500px; background: #ffffff; display: flex; padding: 10px; flex-wrap: wrap;}
+    width:100%; height: 300px; background: #ffffff; display: flex; padding-left: 20px; padding-right: 20px; flex-wrap: wrap;}
 .domains{
     width:40%; height: 150px; background: #ffffff;}
-.footer{
-    width: 100%; height: 500px; margin: 0 auto; background: rgb(60, 60, 60); display: flex; flex-direction: column}
-.rows1{width: 100%; height: 230px; background:rgb(60, 60, 60);}
-.rows2{width: 100%; height: 130px; background: rgb(60, 60, 60); display: flex; flex-direction: row; justify-content: space-between; padding: 20px;}
+    .circle{
+    width: 80%; height: 60%; background: #ffffff; margin: 0 auto; margin-top: 10px; text-align: center;
+    color:rgb(0, 26, 175); }
+    .newPrice{font-size: 9px; font-size: 20px; color:green; margin-left: 22px;}
+.footer{width: 100%; height: 400px; margin: 0 auto; background: #000000; display: flex; flex-direction: column}
+.rows1{width: 90%; height: 230px; background: #000000;}
+.rows2{width: 100%; height: 130px; background: #000000; display: flex; flex-direction: column; justify-content: space-between; margin-top: -30px;}
+.legal{color:lightgray; padding-top: 20px;}
+.socialLinks{color: rgb(0, 26, 175); font-size: 1.5em;}
 }
+
+
+
+@media only screen and (min-width: 500px){
+    .banner{width: 100%; height: auto; margin: 0 auto;}
+    .searchBox{width: 40%; height: 60px; padding-left: 30px ! important;}
+    .searchMe{width: 50%; height:25px; border: 0.5px solid rgb(0, 26, 175); padding-left: 10px; border-radius: 10px; background: #ffffff;}
+}
+@media only screen and (min-width: 400px){
+    .banner{width: 100%; height: auto; margin: 0 auto;}
+    .searchBox{width: 80%; height: 30px;}
+    .searchMe{width: 50%; height:25px; border: 0.5px solid rgb(0, 26, 175); padding-left: 10px; border-radius: 10px; background: #ffffff; margin-left: 55px;}
+
+}
+@media only screen and (min-width: 300px){
+    .banner{width: 100%; height: auto; margin: 0 auto;}
+    .searchBox{width: 70%; height: 30px;}
+    .searchMe{width: 50%; height:25px; border: 0.5px solid rgb(0, 26, 175); padding-left: 10px; border-radius: 10px; background: #ffffff; margin-left: 35px;}
+}
+
+
+
+
+
+
+
+
+
 
     </style>
 </head>
@@ -118,12 +157,19 @@ h4{color:lightgray;}
     <div class="container-fluid wrapper">
         <div class="logoWrap">
             <div class="logo">
-               <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/c668348dfa38a54d662e19d2a19f1a2d/logo.gif" alt="buffahost">
+               <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/c668348dfa38a54d662e19d2a19f1a2d/logo.gif" alt="buffahost" width="280px">
+            </div>
+            <div class="searchBox">
+                <form action="https://us.buffahost.com/domain-registration/index.php" method="post" name="form_domain_avail" id="homepageDomainSearch">
+                <input type="hidden" value="check_availability" name="action">
+                <input type="text" placeholder="Find domain" type="text" name="txtDomainName" class="optionalField domains-input searchMe" id="field_domains-input">
+                <button class="findButton" type="submit" id="go_btn" onclick="return check_domain_name();">Search</button>
+            </form>
             </div>
           
         </div>
         <div class="banner">
-                <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/3c7e943adbe4bd2951202db9a9a9f3b9/free-ssl.png" alt="" width="100%" height="150">
+                <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/bb0b4868375043e5192f704d0165cd99/UNLIMITED-WEB-HOSTING.png" alt="banner" style="width: 100%; height: auto"/>
 
         </div>
         <div class="hostingDeals">
@@ -131,67 +177,91 @@ h4{color:lightgray;}
                     <h3>Best Hosting Deals</h3>
             </div>
             <div class="dealsContent">
-                <div class="content"></div>
-                <div class="contentMiddle"></div>
-                <div class="content"></div>
+                <div class="content">
+                    <div style="border-bottom: .5px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0); font-weight: bold; font-size: 15px;">Baby Calf</div>
+                    <div style="padding:1px; text-align: center; color: rgb(204, 201, 201)"><span style="margin-top:-30px; color:black"> $</span><span style="font-size: 40px; font-weight: bold; color:black">1.85</span><span style="color:black">/mo</span></div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">Single Domain</div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">1 GB Disk Space</div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">4 GB Data Transfer</div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">100 Email Accounts</div>
+                    <div style="padding:5px; text-align: center; background: blue; height: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"><a href="https://us.buffahost.com/web-hosting/index.php" style="font-size: 25px; font-weight:bold; color:#ffffff">Buy Now</a></div>
+
+                </div>
+                <div class="content">
+                        <div style="border-bottom: .5px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0); font-weight: bold; font-size: 15px;">Big Cow</div>
+                    <div style="padding:1px; text-align: center; color: rgb(204, 201, 201)"><span style="margin-top:-30px; color:black"> $</span><span style="font-size: 40px; font-weight: bold; color:black">3.59</span><span style="color:black">/mo</span></div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">Single Domain</div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">20 GB Disk Space</div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">100 GB Data Transfer</div>
+                    <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding-top:7px; padding-bottom:5px; text-align: center; color: rgb(0, 0, 0)">Unlimited Email Accounts</div>
+
+                    <div style="padding:5px; text-align: center; color: #ffffff; background: blue; height: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"><a href="https://us.buffahost.com/web-hosting/index.php" style="font-size: 25px; font-weight:bold; color:#ffffff">Buy Now</a></div>
+                </div>
+                <div class="content">
+                        
+
+                    <div style="border-bottom: .5px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0); font-weight: bold; font-size: 15px;">Wild Bison</div>
+                        <div style="padding:1px; text-align: center; color: rgb(204, 201, 201)"><span style="margin-top:-30px; color:black"> $</span><span style="font-size: 40px; font-weight: bold; color:black">10.75</span><span style="color:black">/mo</span></div>
+                        <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">Unlimited Domain</div>
+                        <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding:7px; text-align: center; color: rgb(0, 0, 0)">Unmetered Disk Space</div>
+                        <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding-top:7px; padding-bottom: 7px; text-align: center; color: rgb(0, 0, 0)">Unmetered Data Transfer</div>
+                        <div style="border-bottom: 1px solid rgb(0, 26, 175);; padding-top:7px; padding-bottom:5px; text-align: center; color: rgb(0, 0, 0)">Unlimited Email Accounts</div>
+                    <div style="padding:5px; text-align: center; color: #ffffff; background: blue; height: 100%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;"><a href="https://us.buffahost.com/web-hosting/index.php" style="font-size: 25px; font-weight:bold; color:#ffffff">Buy Now</a></div>
+                </div>
             </div>
-            <div class="ctaButton">
-                <button class="ctaBut">View Deals</button>
+            <div class="ctaButton1">
+                <button class="ctaBut"><a href="https://us.buffahost.com/web-hosting/index.php" style="color: #ffffff; font-weight: bold; font-size: 20px;">View Deals</a></button>
 
             </div>
             <div class="bannerDomainDeals">
                 <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/3c7e943adbe4bd2951202db9a9a9f3b9/free-ssl.png" alt="" width="100%" height="100">
             </div>
             <div class="header">
-                    <h4>Domain Names Discount</h4>
+                    <h3>Domain Names Discount</h3>
             </div>
             <div class="domainNames">
                 
                 <div class="domains">
                     <div class="circle">
-                        <h2>.com</h2>
-                        <p><span style="font-size: 9px;  text-decoration: line-through" >$12.99</span> <span style="font-size: 12px;">- $10.99</span></p>
+                        <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/9b48b27204b8936790ecf5ae495406af/com.png" alt="com" width="90px">
+                        <p><span class="cancelPrice">$12.99</span></p>
                     </div>
+                    <p> <span class="newPrice">$10.99</span></p>
                     
                 </div>
                 <div class="domains">
                         <div class="circle">
-                                <h2>.xyz</h2>
-                                <p><span style="font-size: 9px;  text-decoration: line-through">$12.99</span> <span style="font-size: 12px;">- $10.99</span></p>
+                            <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/fcf1a5fe5801ff38171287a4412a1ada/xyz.png" alt="xyz" width="90px">
+                                <p><span class="cancelPrice">$12.99</span></p>  
                         </div>
+                        <p> <span class="newPrice">$10.99</span></p>
                        
                 </div>
                 <div class="domains">
                         <div class="circle">
-                                <h2>.ltd</h2>
-                                <p><span style="font-size: 9px;  text-decoration: line-through">$12.99</span> <span style="font-size: 12px;">- $10.99</span></p>
+                                <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/5eb60c9303d51ee51f8ca2dee70d857c/ltd.png" alt="ltd" width="90px">
+                                <p><span class="cancelPrice">$12.99</span></p>
                         </div>
-                       
+                        <p> <span class="newPrice">$10.99</span></p>
                 </div>
                 <div class="domains">
                         <div class="circle">
-                                <h2>.cloud</h2>
-                                <p><span style="font-size: 9px;  text-decoration: line-through">$12.99</span> <span style="font-size: 12px;">- $10.99</span></p>
+                                <img src="https://trello-attachments.s3.amazonaws.com/5d020925b99016457c17cf5d/5d02098f075a603575e04358/96a5ccf1dd67148e7eeed980c611dc42/Untitled-2.png" alt="info" width="90px">
+                                <p><span class="cancelPrice">$12.99</span></p>
                         </div>
-                       
+                        <p> <span class="newPrice">$10.99</span></p>
                 </div>
-                <div class="domains">
-                        <div class="circle">
-                                <h2>.info</h2>
-                                <p><span style="font-size: 9px; text-decoration: line-through">$12.99</span> <span style="font-size: 12px;">- $10.99</span></p>
-                        </div>
-                     
-                </div>
+                
             </div>
             <div class="ctaButton">
-                    <button class="ctaBut">Buy Now!</button>
+                    <button class="ctaBut" ><a href="https://us.buffahost.com/" style="color: #ffffff; font-weight: bold; font-size: 20px;">Buy Now!</a></button>
     
             </div>
             
         </div>
         <div class="footer">
             <div class="rows1">
-                <h4>Hosting & Products</h4>
+                <h4 style="margin-top: 25px">Hosting & Products</h4>
                 <div class="listWrap">
                 <div class="listRow">
                     <li><a href="https://us.buffahost.com/web-hosting/index.php">Linux Hosting</a></li>
@@ -214,19 +284,108 @@ h4{color:lightgray;}
 
                 
             </div>
-            <p style="margin-top: 50px; color:lightgray">Copyright &copy www.pencileedge.net</p>
             
+            <p style="color:lightgray; padding-top:40px; font-size: 9px;">Copyright &copy 2019 Buffahost</p>
+
             </div>
             <div class="rows2">
-                    <i class="fa fa-facebook-f" style="color: rgb(76, 106, 240); font-size: 1.5em;" ></i>
-                    <i class="fa fa-twitter" style="color: rgb(76, 106, 240); font-size: 1.5em;"></i>
-                    <i class="fa fa-instagram" style="color: rgb(76, 106, 240); font-size: 1.5em;"></i>
-                    <i class="fa fa-youtube" style="color: rgb(76, 106, 240); font-size: 1.5em;"></i>
+                <div style=" padding-left:90px;">
+                    <a href="https://www.facebook.com/BuffaHost"><i class="fa fa-facebook-f socialLinks" ></i></a>
+                    <a href="https://twitter.com/buffahost"><i class="fa fa-twitter socialLinks" ></i></a>
+                    <a href="https://www.linkedin.com/company/buffahost"><i class="fa fa-linkedin socialLinks" ></i></a>
+                    <a href="https://www.instagram.com/buffahost/"><i class="fa fa-instagram socialLinks" ></i></a>
+                </div>    
+                    <p class="legal" ><a href="">Privacy Policy</a> | <a href="">Legal Agreement</a></p>
             </div>
            
         </div>
     </div>
-    
+    <script>
+        $(document).ready(function (){
+
+$('form[name="form_domain_avail"]').submit(function(){
+    butt = $("#go_btn");
+    var domain_name = $('#field_domains-input').val() + '.' + $(this).val();
+    $("#go_btn").attr('disabled', 'disabled');
+    animButton();
+});
+});
+var step = 1;
+function animButton()
+{
+
+step++;
+if (step == 7) step = 1;
+if (step == 1)
+{
+    window.status = 'Processing. ';
+    butt.html('. ');
+}
+if (step == 2)
+{
+    window.status = 'Processing. ';
+    butt.html('. ');
+}
+if (step == 3)
+{
+    window.status = 'Processing.. ';
+    butt.html('.. ');
+}
+if (step == 4)
+{
+    window.status = 'Processing.. ';
+    butt.html('.. ');
+}
+if (step == 5)
+{
+    window.status = 'Processing... ';
+    butt.html('... ');
+}
+if (step == 6)
+{
+    window.status = 'Processing... ';
+    butt.html('... ');
+}
+timeout_id = setTimeout("animButton()", 200);
+}
+
+function check_domain_name() // error msg for domian defult value
+{
+var domain_name = $("#field_domains-input").val();
+domain_name = trim(domain_name);
+if((domain_name.length == 0) || (domain_name.match(/[^a-zA-Z0-9-.s]+/)))
+{
+    $("#error_msg").show();
+    return false;
+}
+
+return true;
+}
+
+function remove_error_msg(){
+$("#error_msg").hide();
+}
+
+$(document).ready(function(){
+$('#field_domains-input').textboxValueToggle('YourWebsite');
+$(".home-blurb-wrp .home-blurb:first-child").addClass("first");
+$(".home-blurb-wrp .home-blurb:nth-child(2)").addClass("second");
+$(".home-blurb-wrp .home-blurb:nth-child(3)").addClass("third");
+$(".home-blurb-wrp .home-blurb:nth-child(4)").addClass("fourth");						
+
+});
+$.fn.textboxValueToggle = function(defaultText) {
+$(this).focus(function() {
+        if($(this).val()=== defaultText){
+            $(this).val('').removeClass('optionalField');
+        }
+    }).blur(function() {
+        if($(this).val()==='' ){
+            $(this).addClass('optionalField').val(defaultText);
+        }
+    });
+}    
+    </script>
 </body>
 </html>
 
